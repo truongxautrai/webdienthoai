@@ -1,0 +1,24 @@
+table{
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid goldenrod;
+    
+    
+}
+table th,td{
+    text-align: left;
+    margin:0;
+    padding: 10px;
+}
+th{
+    width: 10%;
+    border-right: 2px solid goldenrod   ;
+}
+td{
+    width: 70%;
+}
+input[type="text"], input[type="email"]{
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}

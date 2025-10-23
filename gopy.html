@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gopy.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="header">
+            <div class="header-left">
+                <img src="./imges/store_1444322786_325.png" alt="">
+            </div>
+
+            <div class="header-center">
+                <p>Hotline <br> 19002008</p>
+            </div>
+
+            <div class="header-right">
+                <a href="" class="giohang">Giỏ hàng</a>
+                <br>
+                0 sản phẩm
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-left">
+                <ul>
+                <li><a href="./index.html">TRANG CHỦ</a></li>
+                <li><a href="#">LAPTOP</a></li>
+                <li><a href="#">SMARTPHONE</a></li>
+                <li><a href="#">TABLET</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">SẢN PHẨM HOT</a></li>
+                <li><a href="./gopy.html">GÓP Ý</a></li>
+                </ul>
+            </div>
+            <div class="menu-search">
+                <input type="text" value="" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+
+        <a href="./index.html" style="text-decoration: none; font-size: 20px;">Trang chủ</a>
+        <form>
+            <table>
+                <caption><h1 style="color: rgb(8, 255, 8);">Góp ý</h1></caption>
+                <tr>
+                    <th>Họ tên</th>
+                    <td><input type="text" name="" id="hoten"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="" id="email"></td>
+                </tr>
+                <tr>
+                    <th>Giới tính</th>
+                    <td>
+                        <input type="radio" name="gioitinh" id="nam" value="Nam">
+                        <label for="nam">Nam</label> 
+                        <input type="radio" name="gioitinh" id="nu" value="Nữ">    
+                        <label for="nam">Nữ</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>Nghề nghiệp</th>
+                    <td>
+                        <select name="nghenghiep" id="nghenghiep">
+                            <option value="Giáo viên">Giáo viên</option>
+                            <option value="Kỹ sư">Kỹ sư</option>
+                            <option value="Học sinh">Học sinh</option>
+                            <option value="Trồng trọt">Trồng trọt</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Nội dung góp ý</th>
+                    <td> 
+                        <textarea name="" id="noidunggopy"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <button onclick="document.getElementById('hienthi').style.display ='block';guigopy();return false">Gửi góp ý</button>
+                        <button type="reset" onclick="document.getElementById('hienthi').style.display ='none'">Làm lại</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="hienthi" style="width: 1200px;;margin: 20px auto; border: 2px solid goldenrod; display: none; padding: 12px;"></div>
+        
+</body>
+</html>
